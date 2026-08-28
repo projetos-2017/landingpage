@@ -168,12 +168,41 @@ export default defineNuxtConfig({
             //   3. GitHub / Product Hunt     — reforço para produto de software
             //   4. Instagram / X (Twitter)   — presença social
             // Descomente cada URL assim que o perfil oficial existir:
+            'founder': { '@id': 'https://editus.com.br/#founder' },
             'sameAs': [
               // 'https://www.linkedin.com/company/editus-ia',
               // 'https://www.crunchbase.com/organization/editus',
               // 'https://github.com/Editus-IA',
               // 'https://www.producthunt.com/products/editus',
               // 'https://www.instagram.com/editus.ia',
+            ],
+          }),
+        },
+        // JSON-LD: Person (fundador) — sinal E-E-A-T para conteúdo YMYL.
+        // Licitação é tema com consequência jurídica/financeira; um autor nomeado
+        // e verificável (referenciado pelo Article.author de cada guia via @id)
+        // correlaciona com mais aparições em respostas de IA do que autoria
+        // anônima de "equipe". sameAs: preencher com LinkedIn/Wikidata quando
+        // os perfis existirem (mesma regra do Organization.sameAs acima).
+        {
+          type: 'application/ld+json',
+          innerHTML: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'Person',
+            '@id': 'https://editus.com.br/#founder',
+            'name': 'Joaquim Alves',
+            'jobTitle': 'Fundador do Editus',
+            'url': 'https://editus.com.br/sobre',
+            'worksFor': { '@id': 'https://editus.com.br/#organization' },
+            'knowsAbout': [
+              'Licitações públicas',
+              'Lei 14.133/2021',
+              'PNCP — Portal Nacional de Compras Públicas',
+              'Inteligência artificial aplicada a compras públicas',
+            ],
+            'sameAs': [
+              // 'https://www.linkedin.com/in/<perfil-do-fundador>',
+              // 'https://www.wikidata.org/wiki/<QID>',
             ],
           }),
         },
@@ -295,6 +324,12 @@ export default defineNuxtConfig({
       '/guia/carta-de-credenciamento-licitacao',
       '/guia/margem-em-licitacao',
       '/guia/como-calcular-bdi',
+      '/guia/dispensa-de-licitacao',
+      '/guia/atestado-de-capacidade-tecnica',
+      '/guia/venci-a-licitacao-e-agora',
+      '/guia/governo-atrasou-pagamento',
+      '/guia/empate-ficto-me-epp',
+      '/guia/licitacao-de-alimentos',
     ],
   },
 })

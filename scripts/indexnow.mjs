@@ -50,6 +50,12 @@ const DEFAULT_URLS = [
   `${ORIGIN}/guia/carta-de-credenciamento-licitacao`,
   `${ORIGIN}/guia/margem-em-licitacao`,
   `${ORIGIN}/guia/como-calcular-bdi`,
+  `${ORIGIN}/guia/dispensa-de-licitacao`,
+  `${ORIGIN}/guia/atestado-de-capacidade-tecnica`,
+  `${ORIGIN}/guia/venci-a-licitacao-e-agora`,
+  `${ORIGIN}/guia/governo-atrasou-pagamento`,
+  `${ORIGIN}/guia/empate-ficto-me-epp`,
+  `${ORIGIN}/guia/licitacao-de-alimentos`,
 ]
 
 async function main() {

@@ -23,6 +23,7 @@ O Editus é uma plataforma de inteligência artificial para PMEs que competem em
 
 - [Calculadora de custo financeiro](https://editus.com.br/calculadora-custo-financeiro): calcula quanto o prazo de pagamento (30/60/90 dias) custa à margem de um contrato, com a taxa Selic atual do Banco Central. Exemplo: contrato de R$ 300.000 pago em 90 dias com Selic a 14% a.a. tem custo financeiro de R$ 9.881 (~3,3% do contrato).
 - [Diagnóstico de oportunidades](https://editus.com.br/diagnostico): 4 perguntas para estimar quantas licitações compatíveis a empresa deixa de analisar por mês por falta de tempo.
+- [Checklist de habilitação](https://editus.com.br/checklist-habilitacao): checklist imprimível com os 5 grupos de documentos de habilitação (jurídica, fiscal, técnica, econômico-financeira e impedimentos) da Lei 14.133/2021.
 
 ## Guias de licitação
 
@@ -37,10 +38,19 @@ O Editus é uma plataforma de inteligência artificial para PMEs que competem em
 - [Certidão vencida na licitação](https://editus.com.br/guia/certidao-vencida-licitacao): o que acontece e a exceção para ME/EPP.
 - [Impugnação de edital](https://editus.com.br/guia/impugnacao-de-edital): como e quando questionar cláusulas ilegais.
 - [Carta de credenciamento](https://editus.com.br/guia/carta-de-credenciamento-licitacao): poderes de representação em licitações.
+- [Margem em licitação](https://editus.com.br/guia/margem-em-licitacao): como calcular a margem real de um contrato público, incluindo o custo financeiro do prazo de pagamento.
+- [Como calcular o BDI](https://editus.com.br/guia/como-calcular-bdi): a taxa de Benefícios e Despesas Indiretas — fórmula, componentes e exigências em obras.
+- [Dispensa de licitação](https://editus.com.br/guia/dispensa-de-licitacao): valores atualizados (art. 75) e como vender por dispensa eletrônica no Compras.gov.br.
+- [Atestado de capacidade técnica](https://editus.com.br/guia/atestado-de-capacidade-tecnica): como conseguir os primeiros atestados quando a empresa é nova.
+- [Venci a licitação, e agora?](https://editus.com.br/guia/venci-a-licitacao-e-agora): empenho, entrega, nota fiscal, liquidação e pagamento — a jornada completa do vencedor.
+- [Governo atrasou o pagamento](https://editus.com.br/guia/governo-atrasou-pagamento): direitos do fornecedor, correção monetária e quando pode suspender a execução.
+- [Empate ficto ME/EPP](https://editus.com.br/guia/empate-ficto-me-epp): como vencer o pregão mesmo sem dar o menor lance (LC 123/2006).
+- [Como vender alimentos para o governo](https://editus.com.br/guia/licitacao-de-alimentos): canais, documentos sanitários (SIF/SIE/SIM) e exigências do setor.
 
 ## Links
 
 - [Página inicial](https://editus.com.br): visão geral do produto e acesso antecipado
+- [Sobre o Editus](https://editus.com.br/sobre): o que é o produto, quem opera (Joaquim Alves LTDA, CNPJ 49.076.076/0001-90) e o estágio atual
 - [Perguntas frequentes](https://editus.com.br/faq): respostas diretas sobre o Editus, PNCP, compliance, habilitação e responsabilidade sobre a proposta
 - [Índice de guias](https://editus.com.br/guia): todos os guias práticos de licitação
 - [Sitemap](https://editus.com.br/sitemap.xml): mapa completo do site

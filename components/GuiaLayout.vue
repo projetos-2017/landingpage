@@ -35,7 +35,12 @@
           {{ guide.description }}
         </p>
         <p class="text-xs text-neutral-400">
-          Atualizado em {{ formattedDate }} · {{ guide.readingTime }} de leitura
+          Atualizado em {{ formattedDate }} · {{ guide.readingTime }} de leitura ·
+          Revisado por
+          <NuxtLink
+            to="/sobre"
+            class="text-neutral-500 hover:text-neutral-700 underline underline-offset-2 transition-colors"
+          >Joaquim Alves</NuxtLink>, fundador do Editus
         </p>
       </header>
 
@@ -92,6 +97,40 @@
               <span class="pt-0.5">{{ item }}</span>
             </li>
           </ol>
+
+          <div
+            v-else-if="block.type === 'table'"
+            class="overflow-x-auto"
+          >
+            <table class="w-full border-collapse text-sm">
+              <thead>
+                <tr class="border-b-2 border-neutral-300">
+                  <th
+                    v-for="(header, j) in block.headers"
+                    :key="j"
+                    class="text-left font-semibold text-neutral-900 py-2.5 pr-4"
+                  >
+                    {{ header }}
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr
+                  v-for="(row, j) in block.rows"
+                  :key="j"
+                  class="border-b border-neutral-200"
+                >
+                  <td
+                    v-for="(cell, k) in row"
+                    :key="k"
+                    class="text-neutral-600 leading-relaxed py-2.5 pr-4 align-top"
+                  >
+                    {{ cell }}
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
 
           <div
             v-else-if="block.type === 'callout'"
