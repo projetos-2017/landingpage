@@ -192,9 +192,15 @@ interface SegmentoResumo {
 
 const { track } = useUmami()
 
+// server: false — a consulta ao PNCP pode levar dezenas de segundos (varredura
+// de até 4 páginas, API sem SLA documentado). Se rodasse no SSR, bloquearia o
+// carregamento da página inteira até o PNCP responder (medido: ~27s no pior
+// caso, o que na prática lê como "a página não carrega"). Client-only: o HTML
+// da página (título, texto, layout) chega instantaneamente, e o painel de
+// dados aparece depois, com o estado "Consultando o PNCP..." enquanto isso.
 const { data, pending } = await useFetch<{ ok: boolean } & Partial<SegmentoResumo>>(
   '/api/pncp-resumo-segmento',
-  { query: { segmento: 'tecnologia' } },
+  { query: { segmento: 'tecnologia' }, server: false },
 )
 
 const loading = computed(() => pending.value)
