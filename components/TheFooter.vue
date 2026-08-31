@@ -62,7 +62,7 @@
         </div>
 
         <!-- Links -->
-        <div class="flex gap-12">
+        <div class="flex flex-wrap gap-x-12 gap-y-8">
           <div>
             <p class="text-xs font-medium text-white/55 uppercase tracking-wider mb-3">
               Produto
@@ -100,6 +100,25 @@
                 href="#waitlist"
                 class="block text-sm text-white/55 hover:text-white/80 transition-colors"
               >Acesso antecipado</a>
+            </div>
+          </div>
+          <div>
+            <p class="text-xs font-medium text-white/55 uppercase tracking-wider mb-3">
+              Recursos
+            </p>
+            <div class="space-y-2">
+              <NuxtLink
+                to="/software-de-licitacoes"
+                class="block text-sm text-white/55 hover:text-white/80 transition-colors"
+              >Software de licitações</NuxtLink>
+              <NuxtLink
+                to="/ia-para-licitacoes"
+                class="block text-sm text-white/55 hover:text-white/80 transition-colors"
+              >IA para licitações</NuxtLink>
+              <NuxtLink
+                to="/licitacoes/tecnologia"
+                class="block text-sm text-white/55 hover:text-white/80 transition-colors"
+              >Licitações de tecnologia</NuxtLink>
             </div>
           </div>
           <div>

@@ -56,6 +56,9 @@ const DEFAULT_URLS = [
   `${ORIGIN}/guia/governo-atrasou-pagamento`,
   `${ORIGIN}/guia/empate-ficto-me-epp`,
   `${ORIGIN}/guia/licitacao-de-alimentos`,
+  `${ORIGIN}/software-de-licitacoes`,
+  `${ORIGIN}/ia-para-licitacoes`,
+  `${ORIGIN}/licitacoes/tecnologia`,
 ]
 
 async function main() {
