@@ -228,6 +228,22 @@
           </li>
         </ul>
       </nav>
+
+      <!-- Linkagem interna para as páginas comerciais: texto âncora com as buscas
+           que queremos ranquear (software de licitações, achar licitação de TI) -->
+      <p class="mt-10 text-sm text-neutral-500 leading-relaxed">
+        Quer automatizar esse trabalho? Veja o que um
+        <NuxtLink
+          to="/software-de-licitacoes"
+          class="text-violet-600 hover:text-violet-700 underline"
+        >software de licitações</NuxtLink>
+        deve fazer, ou
+        <NuxtLink
+          to="/licitacoes/tecnologia"
+          class="text-violet-600 hover:text-violet-700 underline"
+        >como achar licitações de software e TI</NuxtLink>
+        no PNCP.
+      </p>
     </main>
 
     <TheFooter />

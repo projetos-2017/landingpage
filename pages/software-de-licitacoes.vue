@@ -154,12 +154,12 @@ onMounted(() => {
 })
 
 useHead({
-  title: 'Software de licitações: o que é e quando vale a pena — Editus',
+  title: 'Software para licitações: o que faz e como escolher | Editus',
   meta: [
     { name: 'robots', content: 'index, follow' },
     {
       name: 'description',
-      content: 'O que é um software de licitações, quem precisa e o que ele deve automatizar: monitoramento do PNCP, habilitação, risco e custo financeiro.',
+      content: 'O que um software de licitação deve fazer, quem precisa e como escolher: monitoramento do PNCP, habilitação, risco e custo financeiro. Compare com planilha e consultoria.',
     },
     { property: 'og:title', content: 'Software de licitações: o que é e quando vale a pena' },
     { property: 'og:description', content: 'Guia sobre software de licitações — o que automatizar, comparação com planilha e consultoria.' },

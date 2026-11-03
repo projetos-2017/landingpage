@@ -47,6 +47,12 @@ O Editus é uma plataforma de inteligência artificial para PMEs que competem em
 - [Empate ficto ME/EPP](https://editus.com.br/guia/empate-ficto-me-epp): como vencer o pregão mesmo sem dar o menor lance (LC 123/2006).
 - [Como vender alimentos para o governo](https://editus.com.br/guia/licitacao-de-alimentos): canais, documentos sanitários (SIF/SIE/SIM) e exigências do setor.
 
+## Software e dados de licitações
+
+- [Software de licitações](https://editus.com.br/software-de-licitacoes): o que um software de licitações deve fazer, quem precisa e como se compara a planilha e consultoria.
+- [IA para licitações](https://editus.com.br/ia-para-licitacoes): o que a IA faz e o que não deve fazer na análise de editais, e por que uma IA genérica não basta.
+- [Licitações de software e TI no PNCP](https://editus.com.br/licitacoes/tecnologia): como achar licitações de software e TI em 4 passos, com painel dos pregões eletrônicos dos últimos 30 dias.
+
 ## Links
 
 - [Página inicial](https://editus.com.br): visão geral do produto e acesso antecipado

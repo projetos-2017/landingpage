@@ -23,10 +23,11 @@
           Painel de licitações
         </p>
         <h1 class="text-3xl md:text-4xl font-semibold text-neutral-900 tracking-tight leading-tight mb-4">
-          Licitações de tecnologia no PNCP
+          Licitações de software e TI no PNCP
         </h1>
         <p class="text-neutral-600 leading-relaxed">
-          Um retrato dos pregões eletrônicos de tecnologia, software e TI publicados no
+          Como achar licitações de software e tecnologia da informação, e um retrato dos
+          pregões eletrônicos do setor publicados no
           <a
             href="https://pncp.gov.br"
             target="_blank"
@@ -36,6 +37,95 @@
           nos últimos {{ resumo?.janelaDias ?? 30 }} dias.
         </p>
       </header>
+
+      <!-- Conteúdo estático (renderizado no servidor): responde à busca "achar licitação
+           de software" mesmo antes de o painel de dados carregar no navegador -->
+      <section class="mb-12">
+        <h2 class="text-lg font-semibold text-neutral-900 mb-3">
+          Como achar licitação de software e TI
+        </h2>
+        <p class="text-neutral-600 leading-relaxed mb-4">
+          Não existe um filtro único para "licitações de software". O caminho mais seguro é
+          combinar a busca por palavras do objeto com o tipo de contratação:
+        </p>
+        <ol class="space-y-3 pl-1 mb-4">
+          <li class="flex gap-3 text-neutral-600 leading-relaxed">
+            <span
+              class="flex-shrink-0 w-6 h-6 rounded-full bg-violet-100 text-violet-700 font-display font-bold text-xs flex items-center justify-center"
+              aria-hidden="true"
+            >1</span>
+            <span>
+              <strong class="text-neutral-900">Comece pelo PNCP.</strong> A Lei 14.133/2021 criou o
+              <NuxtLink
+                to="/guia/o-que-e-pncp"
+                class="text-violet-600 hover:text-violet-700 underline"
+              >PNCP</NuxtLink>
+              como site oficial de divulgação das contratações públicas, então é onde a busca
+              começa.
+            </span>
+          </li>
+          <li class="flex gap-3 text-neutral-600 leading-relaxed">
+            <span
+              class="flex-shrink-0 w-6 h-6 rounded-full bg-violet-100 text-violet-700 font-display font-bold text-xs flex items-center justify-center"
+              aria-hidden="true"
+            >2</span>
+            <span>
+              <strong class="text-neutral-900">Pesquise por mais de um termo.</strong> Os órgãos
+              descrevem o objeto de formas diferentes: "software", "licença de uso", "sistema
+              informatizado", "tecnologia da informação", "infraestrutura de TI" e "equipamentos
+              de informática" retornam resultados distintos.
+            </span>
+          </li>
+          <li class="flex gap-3 text-neutral-600 leading-relaxed">
+            <span
+              class="flex-shrink-0 w-6 h-6 rounded-full bg-violet-100 text-violet-700 font-display font-bold text-xs flex items-center justify-center"
+              aria-hidden="true"
+            >3</span>
+            <span>
+              <strong class="text-neutral-900">Filtre por modalidade e por UF.</strong> O
+              <NuxtLink
+                to="/guia/pregao-eletronico-como-funciona"
+                class="text-violet-600 hover:text-violet-700 underline"
+              >pregão eletrônico</NuxtLink>
+              é a modalidade típica para bens e serviços comuns, e restringir à sua região reduz
+              ruído. Contratações diretas (dispensa e inexigibilidade) aparecem em outra busca,
+              veja o guia sobre
+              <NuxtLink
+                to="/guia/dispensa-de-licitacao"
+                class="text-violet-600 hover:text-violet-700 underline"
+              >dispensa de licitação</NuxtLink>.
+            </span>
+          </li>
+          <li class="flex gap-3 text-neutral-600 leading-relaxed">
+            <span
+              class="flex-shrink-0 w-6 h-6 rounded-full bg-violet-100 text-violet-700 font-display font-bold text-xs flex items-center justify-center"
+              aria-hidden="true"
+            >4</span>
+            <span>
+              <strong class="text-neutral-900">Confira a habilitação antes de gastar tempo no
+                edital.</strong> Atestados técnicos e certidões são o que mais elimina empresas
+              de TI. Veja os guias de
+              <NuxtLink
+                to="/guia/habilitacao-licitacao"
+                class="text-violet-600 hover:text-violet-700 underline"
+              >habilitação</NuxtLink>
+              e de
+              <NuxtLink
+                to="/guia/atestado-de-capacidade-tecnica"
+                class="text-violet-600 hover:text-violet-700 underline"
+              >atestado de capacidade técnica</NuxtLink>.
+            </span>
+          </li>
+        </ol>
+        <p class="text-neutral-600 leading-relaxed">
+          Fazer isso toda semana, em todos os portais, é o trabalho que um
+          <NuxtLink
+            to="/software-de-licitacoes"
+            class="text-violet-600 hover:text-violet-700 underline"
+          >software de licitações</NuxtLink>
+          automatiza. Abaixo, o que o PNCP mostrou recentemente.
+        </p>
+      </section>
 
       <div
         v-if="loading"
@@ -63,7 +153,7 @@
         <div class="rounded-eb-md border border-amber-200 bg-amber-50/60 px-5 py-4 mb-8 text-xs text-amber-900 leading-relaxed">
           <strong>Como calculamos:</strong> a API pública do PNCP não permite filtrar
           contratações por categoria (TI, tecnologia etc.) diretamente — os números abaixo vêm
-          de uma busca textual por palavras como "tecnologia", "software" e "sistema" no objeto
+          de uma busca textual por palavras como "tecnologia", "software" e "sistema informatizado" no objeto
           de {{ resumo.amostraTotal }} pregões eletrônicos publicados na janela. É uma
           aproximação útil para dimensionar o mercado, não uma contagem oficial exaustiva.
         </div>
@@ -222,15 +312,15 @@ onMounted(() => {
 })
 
 useHead({
-  title: 'Licitações de tecnologia no PNCP — dados atualizados | Editus',
+  title: 'Achar licitação de software e TI: editais no PNCP | Editus',
   meta: [
     { name: 'robots', content: 'index, follow' },
     {
       name: 'description',
-      content: 'Painel com pregões eletrônicos de tecnologia, software e TI publicados no PNCP nos últimos 30 dias: quantidade, valor estimado e órgãos compradores.',
+      content: 'Como achar licitações de software e TI no PNCP, em 4 passos, e um painel com os pregões eletrônicos dos últimos 30 dias: quantidade, valor estimado e órgãos.',
     },
-    { property: 'og:title', content: 'Licitações de tecnologia no PNCP — dados atualizados' },
-    { property: 'og:description', content: 'Quantas licitações de TI foram publicadas recentemente, quanto valem e quem está comprando.' },
+    { property: 'og:title', content: 'Achar licitação de software e TI: editais no PNCP' },
+    { property: 'og:description', content: 'Como achar licitações de software e TI no PNCP e quantas foram publicadas recentemente, quanto valem e quem está comprando.' },
     { property: 'og:type', content: 'website' },
     { property: 'og:url', content: 'https://editus.com.br/licitacoes/tecnologia' },
   ],
