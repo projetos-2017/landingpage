@@ -51,6 +51,7 @@
     "unrs-resolver"
   ],
   "overrides": {
-    "tar": "^7.5.22"
+    "tar": "^7.5.22",
+    "@nuxt/devtools": "^4.1.0"
   }
 }
