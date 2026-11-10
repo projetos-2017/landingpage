@@ -55,7 +55,13 @@ export default defineNuxtConfig({
         { name: 'robots', content: 'index, follow' },
       ],
       link: [
-        { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' },
+        // Ícones: o Google exige favicon em múltiplo de 48px (ICO/PNG) e rastreável;
+        // o SVG serve os navegadores modernos. Sem o /favicon.ico real, o Nitro
+        // devolve um stub vazio (data URI) que o Google lê como "sem favicon".
+        { rel: 'icon', href: '/favicon.ico', sizes: '48x48' },
+        { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg', sizes: 'any' },
+        { rel: 'icon', type: 'image/png', href: '/icon-192.png', sizes: '192x192' },
+        { rel: 'apple-touch-icon', href: '/apple-touch-icon.png' },
         { rel: 'canonical', href: 'https://editus.com.br' },
       ],
       script: [
