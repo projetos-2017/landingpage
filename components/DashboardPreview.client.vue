@@ -167,75 +167,14 @@
             <!-- Logo -->
             <div style="padding:16px 16px 14px; border-bottom:1px solid rgba(255,255,255,0.06);flex-shrink:0;">
               <div style="display:flex;align-items:center;gap:9px;">
-                <!-- editus-symbol-gradient no dashboard preview -->
-                <svg
+                <!-- símbolo oficial: /logo-symbol-gradient.svg -->
+                <img
+                  src="/logo-symbol-gradient.svg"
+                  alt=""
                   width="30"
                   height="30"
-                  viewBox="0 0 56 56"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
                   style="flex-shrink:0;"
                 >
-                  <defs>
-                    <linearGradient
-                      id="dash-ebg"
-                      x1="0"
-                      y1="0"
-                      x2="56"
-                      y2="56"
-                      gradientUnits="userSpaceOnUse"
-                    >
-                      <stop
-                        offset="0"
-                        stop-color="#7B63F5"
-                      />
-                      <stop
-                        offset="1"
-                        stop-color="#5A3CE0"
-                      />
-                    </linearGradient>
-                  </defs>
-                  <rect
-                    width="56"
-                    height="56"
-                    rx="14.56"
-                    fill="url(#dash-ebg)"
-                  />
-                  <rect
-                    x="14"
-                    y="15"
-                    width="22"
-                    height="4"
-                    rx="2"
-                    fill="#fff"
-                  />
-                  <rect
-                    x="14"
-                    y="24"
-                    width="28"
-                    height="4"
-                    rx="2"
-                    fill="#fff"
-                    opacity="0.78"
-                  />
-                  <rect
-                    x="14"
-                    y="33"
-                    width="16"
-                    height="4"
-                    rx="2"
-                    fill="#fff"
-                    opacity="0.6"
-                  />
-                  <path
-                    d="M30 40.5 L34.5 45 L44 33.5"
-                    stroke="#C9F0DD"
-                    stroke-width="4"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    fill="none"
-                  />
-                </svg>
                 <div style="display:flex;flex-direction:column;gap:2px;min-width:0;">
                   <span style="color:white;font-size:15px;font-weight:600;letter-spacing:-0.03em;line-height:1;">edit<span style="color:#B6A8FB;">us</span></span>
                   <span style="font-size:9px;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;color:rgba(155,148,224,0.5);line-height:1;white-space:nowrap;">IA para licitações</span>

@@ -5,56 +5,15 @@
         <!-- Brand -->
         <div>
           <div class="flex items-center gap-2.5 mb-3">
-            <!-- editus-symbol-mono-dark: variante para superfícies escuras -->
-            <svg
-              width="28"
+            <!-- Logo oficial (lockup para superfícies escuras): /logo-lockup-dark.svg -->
+            <img
+              src="/logo-lockup-dark.svg"
+              alt="Editus"
+              width="106"
               height="28"
-              viewBox="0 0 56 56"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
+              class="h-7 w-auto"
+              loading="lazy"
             >
-              <rect
-                width="56"
-                height="56"
-                rx="14.56"
-                fill="#1E1654"
-              />
-              <rect
-                x="14"
-                y="15"
-                width="22"
-                height="4"
-                rx="2"
-                fill="#fff"
-              />
-              <rect
-                x="14"
-                y="24"
-                width="28"
-                height="4"
-                rx="2"
-                fill="#fff"
-                opacity="0.78"
-              />
-              <rect
-                x="14"
-                y="33"
-                width="16"
-                height="4"
-                rx="2"
-                fill="#fff"
-                opacity="0.6"
-              />
-              <path
-                d="M30 40.5 L34.5 45 L44 33.5"
-                stroke="#8E7BF5"
-                stroke-width="4"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                fill="none"
-              />
-            </svg>
-            <span class="font-display font-bold text-white tracking-tight">edit<span class="font-medium text-violet-300">us</span></span>
           </div>
           <p class="text-xs text-white/55 max-w-xs leading-relaxed">
             Inteligência artificial para PMEs brasileiras que competem em licitações públicas.
